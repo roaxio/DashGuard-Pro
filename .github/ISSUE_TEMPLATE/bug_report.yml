@@ -1,0 +1,82 @@
+name: "Bug Report"
+description: "File an actionable bug report to help fix a problem in DashGuard Pro."
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue! Please check existing issues before submitting.
+  - type: input
+    id: device_model
+    attributes:
+      label: "Device Manufacturer & Model"
+      description: "e.g., Google Pixel 6, Samsung Galaxy S20, Xiaomi Redmi Note 10"
+      placeholder: "e.g., Google Pixel 6"
+    validations:
+      required: true
+  - type: input
+    id: android_version
+    attributes:
+      label: "Android OS Version"
+      description: "e.g., Android 11, Android 13, Android 14"
+      placeholder: "e.g., Android 13"
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: "Affected Subsystem"
+      description: "Which part of the app is failing?"
+      options:
+        - "Camera & Preview"
+        - "Continuous Loop Recording"
+        - "G-Sensor Collision / Impact Detection"
+        - "Telemetry HUD & Speedometer"
+        - "Storage & Clip Eviction"
+        - "Video Playback & Export"
+        - "Kiosk Mode & Thermal Management"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: "Current Behavior"
+      description: "A clear description of what actually happens."
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "A clear description of what you expected to happen."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Detailed step-by-step instructions to reproduce the issue."
+      placeholder: |
+        1. Open DashGuard Pro
+        2. Mount phone in landscape orientation
+        3. Tap Start Recording
+        4. See error...
+    validations:
+      required: true
+  - type: textarea
+    id: logcat
+    attributes:
+      label: "Logcat / Crash Logs (Optional)"
+      description: "Paste relevant logcat output or crash traces if available."
+      render: shell
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "I have confirmed this bug occurs on the latest release of DashGuard Pro."
+          required: true
+        - label: "I have searched open and closed issues and verified this is not a duplicate."
+          required: true

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Shield silhouette -->
+    <path
+        android:fillColor="#222B38"
+        android:pathData="M54,23 C62,31 71,35 78,36 L78,51 C78,67 68,78 54,85 C40,78 30,67 30,51 L30,36 C37,35 46,31 54,23 Z" />
+    <!-- Outer cyan ring -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M54,54m-15,0a15,15 0,1,1 30,0a15,15 0,1,1 -30,0 M54,54m-12.5,0a12.5,12.5 0,1,0 25,0a12.5,12.5 0,1,0 -25,0" />
+    <!-- Inner cyan lens core -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M54,54m-7.8,0a7.8,7.8 0,1,1 15.6,0a7.8,7.8 0,1,1 -15.6,0" />
+</vector>

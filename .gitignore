@@ -1,0 +1,59 @@
+# Built application files
+*.apk
+*.aar
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+app/build/
+captures/
+app/src/test/screenshots/
+.externalNativeBuild/
+.cxx/
+
+# Gradle files
+.gradle/
+buildOutputCleanup/
+
+# Kotlin
+.kotlin/
+
+# Android Studio & IntelliJ IDEA
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Visual Studio Code & IDEs
+.vscode/
+.antigravity/
+.cursor/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Secrets & Private Environment Configurations
+.env
+local.properties
+keystore.properties
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+
+# Local Development Scripts
+*.bat
+!gradlew.bat

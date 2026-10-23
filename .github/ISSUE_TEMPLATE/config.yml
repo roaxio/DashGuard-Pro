@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "Security Advisory"
+    url: "https://github.com/roaxio/DashGuard-Pro/security/advisories/new"
+    about: "Please report security vulnerabilities confidentially here."

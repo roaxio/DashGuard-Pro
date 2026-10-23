@@ -1,0 +1,59 @@
+name: "Device Compatibility Report"
+description: "Submit a hardware compatibility report for an Android device model tested with DashGuard Pro."
+title: "[Device]: "
+labels: ["device-compatibility", "hardware"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help build the DashGuard Pro hardware compatibility database! Please share your real-world test results.
+  - type: input
+    id: device
+    attributes:
+      label: "Device Manufacturer & Model"
+      description: "e.g., Samsung Galaxy S9 (SM-G960F), OnePlus 7T"
+      placeholder: "e.g., Samsung Galaxy S9"
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: "Android OS & ROM Version"
+      description: "e.g., Android 10 (Stock OneUI 2.5), LineageOS 20"
+      placeholder: "e.g., Android 10 Stock"
+    validations:
+      required: true
+  - type: dropdown
+    id: overall_status
+    attributes:
+      label: "Overall Compatibility Status"
+      options:
+        - "Fully Compatible (Zero Issues, 1hr+ continuous recording)"
+        - "Mostly Compatible (Minor quirks, functional recording)"
+        - "Partially Compatible (Thermal throttling or sensor limitations)"
+        - "Incompatible / Crashing"
+    validations:
+      required: true
+  - type: dropdown
+    id: max_stable_res
+    attributes:
+      label: "Highest Stable Resolution"
+      options:
+        - "4K UHD (3840x2160) @ 30fps"
+        - "1080p FHD (1920x1080) @ 60fps"
+        - "1080p FHD (1920x1080) @ 30fps"
+        - "720p HD (1280x720) @ 30fps"
+        - "480p SD (720x480)"
+    validations:
+      required: true
+  - type: textarea
+    id: thermal_performance
+    attributes:
+      label: "Thermal & Battery Observations"
+      description: "How does the phone handle heat during daytime driving with direct sunlight on windshield?"
+      placeholder: "e.g., Phone reached 41°C after 45 minutes on windshield mount, stayed stable with A/C vent airflow."
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: "Additional Notes or Recommended Settings"
+      description: "Any specific tweaks (e.g., disabling audio, using 720p for long trips) that work best for this device."
